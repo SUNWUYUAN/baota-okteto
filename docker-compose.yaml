@@ -1,13 +1,13 @@
 version: '3.3'
 services:
-    alist:
+    baota:
         restart: always
         volumes:
             - data:/
         ports:
             - 8888:8888
             - 80:80
-        container_name: uptime
+        container_name: baota
         image: 'pch18/baota:latest'
 
 volumes:
