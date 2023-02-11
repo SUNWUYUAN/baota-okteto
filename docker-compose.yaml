@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+    alist:
+        restart: always
+        volumes:
+            - data:/
+        ports:
+            - 8888:8888
+            - 80:80
+        container_name: uptime
+        image: 'pch18/baota:latest'
+
+volumes:
+  data:
+    size: 5Gi
